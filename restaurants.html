@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Басейни - Аквапарк "Весела Хвиля"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Аквапарк "Весела Хвиля"</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="attractions.html">Атракціони</a>
+        <a href="pools.html">Басейни</a>
+        <a href="restaurants.html">Ресторани</a>
+        <a href="contacts.html">Контакти</a>
+    </nav>
+
+    <section class="contact-section">
+        <h2>Контакти ресторанів</h2>
+
+        <div class="contact-list contact-list-animate">
+            <div class="contact-item">
+                <h3>Ресторан "Ростіслава"</h3>
+                <p><strong>Телефон:</strong> +380632345512<br>
+                <strong>Електронна пошта:</strong> shanaev652@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Аквапарк "Весела Хвиля". Усі права захищені.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var contactLists = document.querySelectorAll(".contact-list-animate");
+            
+            contactLists.forEach(function(contactList) {
+                contactList.classList.add("show");
+            });
+        });
+    </script>
+</body>
+</html>

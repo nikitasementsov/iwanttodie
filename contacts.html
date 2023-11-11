@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Аквапарк "Весела Хвиля"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Аквапарк "Весела Хвиля"</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="attractions.html">Атракціони</a>
+        <a href="pools.html">Басейни</a>
+        <a href="restaurants.html">Ресторани</a>
+        <a href="contacts.html">Контакти</a>
+    </nav>
+
+    <section>
+        <h2>Контактна інформація</h2>
+
+        <div class="contact-list">
+            <div class="contact-item">
+                <h3>Загальні контакти</h3>
+                <p><strong>Телефон:</strong> +380987654321<br>
+                <strong>Електронна пошта:</strong> nehochyvzhe23@gmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Адміністрація</h3>
+                <p><strong>Телефон:</strong> +380987654322<br>
+                <strong>Електронна пошта:</strong> admin@gmailcom</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            var contactLists = document.querySelectorAll(".contact-list-animate");
+            
+            contactLists.forEach(function(contactList) {
+                var position = contactList.getBoundingClientRect();
+                var windowHeight = window.innerHeight;
+    
+                if (position.top < windowHeight && position.bottom >= 0) {
+                    contactList.classList.add("show");
+                }
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2023 Аквапарк "Весела Хвиля". Усі права захищені.</p>
+    </footer>
+</body>
+</html>
